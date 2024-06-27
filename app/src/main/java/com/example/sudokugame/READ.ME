@@ -1,0 +1,68 @@
+Sudoku Game Application
+Overview
+This project is an Android application for playing Sudoku. It features dynamic Sudoku grid generation, varying difficulty levels, hint functionalities, and incorrect guess management. The app is designed to provide an engaging and challenging Sudoku experience for users.
+Features
+* Dynamic Sudoku Grid Generation: Generates a new Sudoku puzzle every time the app is launched.
+* Difficulty Levels: Offers Easy, Medium, and Hard difficulty levels.
+* Hints: Allows users to use up to 3 hints per game to reveal hidden cells.
+* Incorrect Guess Management: Tracks incorrect guesses and reloads the grid after 4 incorrect guesses.
+* User Interface: Customizable grid layout, background, and buttons.
+* Player Interaction: Allows users to input numbers using a custom keyboard.
+Project Structure
+The project consists of the following key files and directories:
+* MainActivity.kt: The main activity file that handles the game logic and UI interactions.
+* HomeActivity.kt: The home activity file for the app's landing page.
+* res/layout/activity_main.xml: The layout XML file for the main activity.
+* res/layout/activity_home.xml: The layout XML file for the home activity.
+* res/drawable/: Directory containing drawable resources such as backgrounds and button styles.
+* res/values/: Directory containing XML files for dimensions, colors, and strings.
+Getting Started
+Prerequisites
+* Android Studio installed on your machine.
+* Basic knowledge of Kotlin and Android development.
+Installation
+1. Clone the repository ; git clone https://github.com/ghafouriismail/sudoku-game.git
+2. Open the project in Android Studio:
+    * Launch Android Studio.
+    * Select "Open an existing Android Studio project."
+    * Navigate to the cloned repository and open it.
+3. Build the project:
+    * Click on "Build" in the top menu and select "Make Project."
+4. Run the application:
+    * Connect an Android device or start an emulator.
+    * Click on the "Run" button or select "Run" -> "Run 'app'" from the top menu.
+Usage
+1. Home Screen:
+    * Enter your name.
+    * Select a difficulty level (Easy, Medium, Hard).
+    * Click on the "Start Game" button to begin playing.
+2. Game Screen:
+    * The Sudoku grid will be displayed with some cells pre-filled based on the selected difficulty level.
+    * Tap on an empty cell to select it and use the custom keyboard to input a number.
+    * Use the "Hint" button to reveal a hidden cell (maximum 3 hints per game).
+    * Use the "Finish" button to check if the Sudoku puzzle is solved correctly.
+    * Use the "Home" button to return to the home screen.
+3. Incorrect Guesses:
+    * If an incorrect number is entered, the cell text color will turn red.
+    * After 4 incorrect guesses, the grid will be reloaded with a new puzzle.
+Customization
+* Grid Background: Modify res/drawable/gridbackground.xml to change the grid's background.
+* Button Styles: Modify res/drawable/button_background.xml and res/drawable/button_background2.xml for button styles.
+* Grid Margin and Padding: Adjust values in res/values/dimens.xml.
+How It Works
+Grid Generation
+The generateSudokuGrid function creates a valid Sudoku grid by filling in numbers from 1 to 9 in a shuffled order. It uses a backtracking algorithm implemented in generateSudokuGridHelper to ensure that the grid adheres to Sudoku rules (no duplicate numbers in any row, column, or 3x3 sub-grid).
+Hiding Cells
+The hideCells function hides a specified number of cells based on the chosen difficulty level. The number of cells to hide varies as follows:
+* Easy: 45 cells
+* Medium: 48 cells
+* Hard: 61 cells
+Custom Keyboard
+When a cell is selected, a custom keyboard appears, allowing the user to input numbers from 1 to 9. The showCustomKeyboard function handles the custom keyboard display and interactions.
+Validation
+The isValidMove function checks if placing a number in a specific cell is valid according to Sudoku rules. The isSudokuSolvedCorrectly function verifies if the Sudoku puzzle is solved correctly by comparing the current grid with the original grid.
+Hint Functionality
+The hintButton click listener provides hints to the user by revealing a hidden cell. The number of hints is limited to 3 per game.
+Incorrect Guess Handling
+The app tracks incorrect guesses, and after 4 incorrect guesses, it reloads the grid with a new puzzle. This is managed in the showCustomKeyboard function.
+This project demonstrates essential concepts in Android development, including dynamic UI generation, custom views, event handling, and game logic implementation. It serves as a solid foundation for further enhancements and customization to provide an even richer Sudoku gaming experience.

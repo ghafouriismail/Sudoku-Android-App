@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/gridbackground">
+
+    <GridLayout
+        android:id="@+id/gridLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <Button
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:backgroundTint="@color/black"
+            android:text="Home"
+            app:cornerRadius="2dp" />
+
+        <Button
+            android:id="@+id/player"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:backgroundTint="@color/material_dynamic_neutral_variant20"
+            android:text="Player"
+            app:cornerRadius="2dp" />
+
+        <Button
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:backgroundTint="@color/material_dynamic_neutral50"
+            android:hint="Player name"
+            android:textColorHint="@color/white"
+            app:cornerRadius="2dp" />
+
+
+    </GridLayout>
+
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/button_1"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:backgroundTint="@color/material_dynamic_neutral20"
+            android:text="1"
+            app:cornerRadius="2dp" />
+
+        <Button
+            android:id="@+id/button_2"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:backgroundTint="@color/material_dynamic_neutral20"
+            android:text="2"
+            app:cornerRadius="2dp" />
+
+        <Button
+            android:id="@+id/button_3"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:backgroundTint="@color/material_dynamic_neutral20"
+            android:text="3"
+            app:cornerRadius="2dp" />
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="4"
+            android:backgroundTint="@color/material_dynamic_neutral30"
+            android:text="Delete"
+            app:cornerRadius="2dp" />
+
+
+        <Button
+            android:id="@+id/button_4"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:backgroundTint="@color/material_dynamic_neutral20"
+            android:text="4"
+            app:cornerRadius="2dp" />
+
+        <Button
+            android:id="@+id/button_5"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:backgroundTint="@color/material_dynamic_neutral20"
+            android:text="5"
+            app:cornerRadius="2dp" />
+
+        <Button
+            android:id="@+id/button_6"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:backgroundTint="@color/material_dynamic_neutral20"
+            android:text="6"
+            app:cornerRadius="2dp" />
+
+        <Button
+            android:id="@+id/Hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="4"
+            android:backgroundTint="@color/material_dynamic_tertiary70"
+            android:text="Hint"
+            app:cornerRadius="2dp" />
+
+
+        <Button
+            android:id="@+id/button_7"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:backgroundTint="@color/material_dynamic_neutral20"
+            android:text="7"
+            app:cornerRadius="2dp" />
+
+        <Button
+            android:id="@+id/button_8"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:backgroundTint="@color/material_dynamic_neutral20"
+            android:text="8"
+            app:cornerRadius="2dp" />
+
+        <Button
+            android:id="@+id/button_9"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="3"
+            android:backgroundTint="@color/material_dynamic_neutral20"
+            android:text="9"
+            app:cornerRadius="2dp" />
+
+        <Button
+            android:id="@+id/finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="4"
+            android:backgroundTint="@color/material_dynamic_neutral30"
+            android:text="Finish"
+            app:cornerRadius="2dp" />
+
+
+    </GridLayout>
+
+    <GridLayout
+        android:id="@+id/my_grid"
+        android:layout_width="390dp"
+        android:layout_height="390dp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout2">
+
+
+    </GridLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
